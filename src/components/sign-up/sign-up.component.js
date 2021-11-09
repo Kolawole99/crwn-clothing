@@ -8,8 +8,8 @@ import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
 import './sign-up.styles.scss';
 
 class SignUp extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
 
     this.state = {
       displayName: '',
@@ -74,7 +74,7 @@ class SignUp extends React.Component {
             required
           />
           <FormInput
-            type="text"
+            type="password"
             name="password"
             value={password}
             handleChange={this.handleChange}
@@ -82,7 +82,7 @@ class SignUp extends React.Component {
             required
           />
           <FormInput
-            type="text"
+            type="password"
             name="confirmPassword"
             value={confirmPassword}
             handleChange={this.handleChange}
